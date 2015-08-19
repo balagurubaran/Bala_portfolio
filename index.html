@@ -31,7 +31,7 @@
 
 </head>
 
-<body id="page-top" class="index">
+<body id="page-top" class="index" onload=initialize()>
 
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -69,7 +69,7 @@
 
     <!-- Header -->
     <header>
-        <div class="container">
+        <div class="container" style="background-image:img/bala.png">
             <div class="row">
                 <div class="col-lg-12">
                     <img class="img-responsive" src="img/bala.png" alt="">
@@ -83,19 +83,19 @@
                     
                      <ul class="list-inline item-details">
                                <li>
-                                    <strong><a href="http://techiespoint.com/Balagurubaran-iOS.pdf"><span style="color: #fff">Resume</span></a>
+                                    <strong><a href="http://techiespoint.com/Balagurubaran-iOS.pdf" target="_blank"><span style="color: #fff">Resume</span></a>
                                     </strong>
                                 </li>
                                 <li>
-                                    <strong ><a href="http://github.com/balagurubaran"><span style="color: #fff">Github</span></a>
+                                    <strong ><a href="http://github.com/balagurubaran" target="_blank"><span style="color: #fff">Github</span></a>
                                     </strong>
                                 </li>
                                  <li>
-                                    <strong><a href="https://itunes.apple.com/gb/artist/balagurubaran-kalingarayan/id717305142"><span style="color: #fff">App store</span></a>
+                                    <strong><a href="https://itunes.apple.com/gb/artist/balagurubaran-kalingarayan/id717305142" target="_blank"><span style="color: #fff">App store</span></a>
                                     </strong>
                                 </li>
                                  <li>
-                                    <strong><a href="https://www.linkedin.com/in/balagurubaran"><span style="color: #fff">LinkedIn</span></a>
+                                    <strong><a href="https://www.linkedin.com/in/balagurubaran" target="_blank"><span style="color: #fff">LinkedIn</span></a>
                                     </strong>
                                 </li>
                       </ul>
@@ -121,7 +121,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/iworldLocation.png" class="img-responsive" alt="">
+                        <img src="img/portfolio/iworldLocation.png" class="img-responsive" alt="iworldLocation">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
@@ -131,7 +131,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/tap.png" class="img-responsive" alt="">
+                        <img src="img/portfolio/tap.png" class="img-responsive" alt="Tap colour">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
@@ -141,7 +141,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/circle.png" class="img-responsive" alt="">
+                        <img src="img/portfolio/circle.png" class="img-responsive" alt="Match the circle">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
@@ -151,7 +151,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/no9.png" class="img-responsive" alt="">
+                        <img src="img/portfolio/no9.png" class="img-responsive" alt="No #9">
                     </a>
                 </div>
                 <!-- 
@@ -207,27 +207,28 @@
 -->
     <!-- Contact Section -->
     <section id="contact">
-        <div class="container">
+        <div class="container" style="background-color:#18bc9c;">
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Contact Me</h2>
-                    <hr class="star-primary">
-                </div>
+                
                 <div class="col-lg-12 text-center">
                     <h3>Call me : +919789121990</h3>
                 </div>
+				<div class="col-lg-12 text-center">
+				<h3>Location</h3>
+							<div id="googleMap" style="width:100%;height:350px;"></div>
+                        <p>F3 Ruby enclave<br>Muthuramalingam street,East Tambaram <br>Tamilnadu, India - 600059</p>
+						 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="text-center">
-        <div class="footer-above">
+        <!-- <div class="footer-above">-->
             <div class="container">
                 <div class="row">
                     <div class="footer-col col-md-12">
-                        <h3>Location</h3>
-                        <p>F3 Ruby enclave<br>Muthuramalingam street,East Tambaram <br>Tamilnadu, India - 600059</p>
+                        
                     </div>
                     <!---
                     <div class="footer-col col-md-4">
@@ -441,6 +442,11 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="js/freelancer.js"></script>
+	<script src="http://maps.googleapis.com/maps/api/js">
+</script>
+<script src="js/googlemap.js">>
+
+</script>
 
 </body>
 
